@@ -1,6 +1,10 @@
 # AIDriver
 Using reinforcement and imitation learning to make an agent drive a car with somewhat realistic physics in Unity
 
+Car controller used (after modification) from: assetstore.unity.com/packages/tools/physics/ms-vehicle-system-free-version-90214
+
+Path creator used (after modification) from: https://assetstore.unity.com/packages/tools/utilities/b-zier-path-creator-136082
+
 The setup:
 
 At the start of the episode:
