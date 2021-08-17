@@ -63,6 +63,8 @@ public class AIDriverAgent : Agent
         Vector3 localVelocity = transform.InverseTransformDirection(RB.velocity);
         float forwardSpeed = localVelocity.z;
 
+      
+
         AddReward(forwardSpeed * 0.0001f);
 
     }
@@ -70,8 +72,9 @@ public class AIDriverAgent : Agent
     public override void Heuristic(in ActionBuffers actionsOut)
     {
         ActionSegment<float> ContinuousActions = actionsOut.ContinuousActions;
-        ContinuousActions[0] = Input.GetAxis("Vertical");
-        ContinuousActions[1] = Input.GetAxis("Horizontal");
+         ContinuousActions[0] = Input.GetAxis("Vertical");
+         ContinuousActions[1] = Input.GetAxis("Horizontal");
+
     }
 
     public Transform WaypointTransform;

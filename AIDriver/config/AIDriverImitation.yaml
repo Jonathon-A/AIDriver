@@ -17,13 +17,13 @@ behaviors:
     reward_signals:
       extrinsic:
         gamma: 0.99
-        strength: 0.1
-      gail:
-       strength: 1.0
-       demo_path: Demos/AIDriverDemoRight.demo
-    behavioral_cloning:
         strength: 1.0
-        demo_path: Demos/AIDriverDemoRight.demo
-    max_steps: 5000000
+      gail:
+       strength: 0.5
+       demo_path: Demos/AIDriverRight1.demo
+    behavioral_cloning:
+        strength: 0.5
+        demo_path: Demos/AIDriverRight1.demo
+    max_steps: 1000000000
     time_horizon: 64
-    summary_freq: 5000
+    summary_freq: 100000
