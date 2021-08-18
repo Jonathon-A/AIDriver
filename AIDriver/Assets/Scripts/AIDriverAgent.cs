@@ -56,24 +56,65 @@ public class AIDriverAgent : Agent
 
     public override void OnActionReceived(ActionBuffers actions)
     {
-        float Acceleration = actions.ContinuousActions[0];
-        float Turning = actions.ContinuousActions[1];
+        //float Acceleration = actions.ContinuousActions[0];
+        //float Turning = actions.ContinuousActions[1];
+
+        float Acceleration = 0;
+
+        switch(actions.DiscreteActions[0])
+        {
+            case (0):
+                Acceleration = 0;
+                break;
+            case (1):
+                Acceleration = 1;
+                break;
+            case (2):
+                Acceleration = -1;
+                break;
+        }
+
+        float Turning = actions.ContinuousActions[0];
+
+
         ControlsScript.SetControlInputs(Acceleration, Turning);
 
         Vector3 localVelocity = transform.InverseTransformDirection(RB.velocity);
         float forwardSpeed = localVelocity.z;
 
-      
+     //   Debug.Log(Acceleration + " " + Turning);
 
         AddReward(forwardSpeed * 0.0001f);
 
     }
+   // public float InputThrottle;
 
     public override void Heuristic(in ActionBuffers actionsOut)
     {
         ActionSegment<float> ContinuousActions = actionsOut.ContinuousActions;
-         ContinuousActions[0] = Input.GetAxis("Vertical");
-         ContinuousActions[1] = Input.GetAxis("Horizontal");
+        //ContinuousActions[0] = Input.GetAxis("Vertical");
+        //ContinuousActions[1] = Input.GetAxis("Horizontal");
+
+
+
+        //     ContinuousActions[0] = InputThrottle;
+
+        ContinuousActions[0] = Input.GetAxis("Horizontal");
+
+        ActionSegment<int> DiscreteActions = actionsOut.DiscreteActions;
+
+        switch (Input.GetAxisRaw("Vertical"))
+        {
+            case (0):
+                DiscreteActions[0] = 0;
+                break;
+            case (1):
+                DiscreteActions[0] = 1;
+                break;
+            case (-1):
+                DiscreteActions[0] = 2;
+                break;
+        }
 
     }
 

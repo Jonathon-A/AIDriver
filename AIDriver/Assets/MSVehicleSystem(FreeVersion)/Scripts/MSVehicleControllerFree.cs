@@ -1895,7 +1895,7 @@ public class MSVehicleControllerFree : MonoBehaviour
     {
         if (youCanCall && isInsideTheCar && controls.controls.enable_startTheVehicle_Input)
         {
-            if ((Input.GetKeyDown(controls.controls.startTheVehicle) && !theEngineIsRunning) || (Mathf.Abs(verticalInput) > 0.5f && !theEngineIsRunning))
+            if ((Input.GetKeyDown(controls.controls.startTheVehicle) && !theEngineIsRunning) || (Mathf.Abs(verticalInput) > 0f && !theEngineIsRunning))
             {
                 enableEngineSound = true;
                 if (_sounds.engineSound)
@@ -2178,7 +2178,9 @@ public class MSVehicleControllerFree : MonoBehaviour
         {
             return 0;
         }
-        if ((Mathf.Abs(verticalInput) < 0.5f) || KMh > _vehicleTorque.maxVelocityKMh)
+        if (
+            (Mathf.Abs(verticalInput) < 0.5f) || //this was commented out for smooth acceleration
+            KMh > _vehicleTorque.maxVelocityKMh)
         {
             return 0;
         }
@@ -2248,6 +2250,7 @@ public class MSVehicleControllerFree : MonoBehaviour
             adjustTorque = 1;
         }
 
+       
         return torqueM * adjustTorque * vehicleScale;
     }
 
