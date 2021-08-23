@@ -21,7 +21,7 @@ behaviors:
     reward_signals: 
       extrinsic: 
         gamma: 0.99
-        strength: 0.5
+        strength: 0.1
       gail: 
         demo_path: Demos/AIDriverDRight1.demo
         strength: 1.0
