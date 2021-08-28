@@ -102,6 +102,8 @@ public class VehicleCamerasClassFree
 }
 [Serializable]
 public class CameraTypeClassFree
+
+
 {
     [Tooltip("A camera must be associated with this variable. The camera that is associated here, will receive the settings of this index.")]
     public Camera _camera;
@@ -1232,6 +1234,7 @@ public class MSVehicleControllerFree : MonoBehaviour
         isInsideTheCar = false;
         EnableCameras(-1);
         handBrakeTrue = true;
+        
     }
 
     void FixedUpdate()

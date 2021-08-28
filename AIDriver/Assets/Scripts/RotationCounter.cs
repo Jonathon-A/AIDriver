@@ -12,4 +12,11 @@ public class RotationCounter : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, transform.eulerAngles.y, 0); ;
        
     }
+
+    void LateUpdate()
+    {
+
+        transform.rotation = Quaternion.Euler(0, transform.eulerAngles.y, 0); ;
+
+    }
 }

@@ -46,10 +46,10 @@ public class AIDriverAgent : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        // Vector3 WaypointForward = WaypointsList[NextIndex].transform.forward ;
-        //  float DirectionDot = Vector3.Dot(transform.forward, WaypointForward);
-        //  sensor.AddObservation(DirectionDot);
-
+        Vector3 WaypointForward = WaypointsList[NextIndex].transform.right;
+        float DirectionAngle = Vector3.Angle(transform.forward, WaypointForward);
+        sensor.AddObservation(DirectionAngle);
+       // Debug.Log(DirectionAngle);
     }
 
     public MSSceneControllerFree ControlsScript;
