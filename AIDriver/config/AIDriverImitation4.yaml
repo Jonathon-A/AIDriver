@@ -2,8 +2,8 @@
 behaviors: 
   AIDriver: 
     behavioral_cloning: 
-      demo_path: Demos/2AIDriver2.demo
-      strength: 1.0
+      demo_path: Demos/3AIDriver1.demo
+      strength: 0.1
     hyperparameters: 
       batch_size: 256
       beta: 0.0005
@@ -23,8 +23,8 @@ behaviors:
         gamma: 0.99
         strength: 1.0
       gail: 
-        demo_path: Demos/2AIDriver2.demo
-        strength: 1.0
+        demo_path: Demos/3AIDriver1.demo
+        strength: 0.1
     summary_freq: 100000
     time_horizon: 64
     trainer_type: ppo

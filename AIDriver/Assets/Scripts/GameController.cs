@@ -40,8 +40,8 @@ public class GameController : MonoBehaviour
 
                     Renderer[] renderChildren = GO.GetComponentsInChildren<Renderer>();
 
-                    int i = 0;
-                    for (i = 0; i < renderChildren.Length; ++i)
+                   
+                    for (int i = 0; i < renderChildren.Length; ++i)
                     {
                         renderChildren[i].enabled = true;
                     }
@@ -58,8 +58,8 @@ public class GameController : MonoBehaviour
                     }
                     Renderer[] renderChildren = GO.GetComponentsInChildren<Renderer>();
 
-                    int i = 0;
-                    for (i = 0; i < renderChildren.Length; ++i)
+                
+                    for (int i = 0; i < renderChildren.Length; ++i)
                     {
                         renderChildren[i].enabled = false;
                     }
