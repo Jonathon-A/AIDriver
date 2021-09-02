@@ -2919,7 +2919,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 1500
+  MaxStep: 3000
   StartPositionVariance: {x: 10, y: 5}
   ControlsScript: {fileID: 3694751241670620129}
   WaypointTransform: {fileID: 0}

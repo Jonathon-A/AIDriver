@@ -106,22 +106,31 @@ namespace PathCreation.Examples
                     GameObject NewBarrier = Instantiate(Barrier, vertSideA, new Quaternion(0, 0, 0, 0));
 
                     Vector3 direction = NewvertSideA - NewBarrier.transform.position;
-                    NewBarrier.transform.rotation = Quaternion.LookRotation(direction);
-                    NewBarrier.transform.position += direction / 2;
-                    NewBarrier.transform.localScale = new Vector3(Barrier.transform.localScale.x, Barrier.transform.localScale.y, direction.magnitude);
-                    NewBarrier.transform.position += -NewBarrier.transform.right * NewBarrier.transform.lossyScale.x / 2;
-                    NewBarrier.transform.parent = BarrierParent;
+                    if (direction.magnitude != 0)
+                    {
+                        NewBarrier.transform.rotation = Quaternion.LookRotation(direction);
+                        NewBarrier.transform.position += direction / 2;
+                        NewBarrier.transform.localScale = new Vector3(Barrier.transform.localScale.x, Barrier.transform.localScale.y, direction.magnitude);
+                        NewBarrier.transform.position += -NewBarrier.transform.right * NewBarrier.transform.lossyScale.x / 2;
+                        NewBarrier.transform.parent = BarrierParent;
+                    }
+                    else { DestroyImmediate(NewBarrier); }
 
 
                     NewBarrier = Instantiate(Barrier, vertSideB, new Quaternion(0, 0, 0, 0));
 
                     direction = NewvertSideB - NewBarrier.transform.position;
-                    NewBarrier.transform.rotation = Quaternion.LookRotation(direction);
-                    NewBarrier.transform.position += direction / 2;
-                    NewBarrier.transform.localScale = new Vector3(Barrier.transform.localScale.x, Barrier.transform.localScale.y, direction.magnitude);
-                    NewBarrier.transform.position += NewBarrier.transform.right * NewBarrier.transform.lossyScale.x / 2;
-                    NewBarrier.transform.parent = BarrierParent;
+                    if (direction.magnitude != 0)
+                    {
 
+
+                        NewBarrier.transform.rotation = Quaternion.LookRotation(direction);
+                        NewBarrier.transform.position += direction / 2;
+                        NewBarrier.transform.localScale = new Vector3(Barrier.transform.localScale.x, Barrier.transform.localScale.y, direction.magnitude);
+                        NewBarrier.transform.position += NewBarrier.transform.right * NewBarrier.transform.lossyScale.x / 2;
+                        NewBarrier.transform.parent = BarrierParent;
+                    }
+                    else { DestroyImmediate(NewBarrier); }
                 }
                 // Add top of road vertices
                 verts[vertIndex + 0] = vertSideA;

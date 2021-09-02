@@ -1,9 +1,9 @@
 --- 
 behaviors: 
   AIDriver: 
-    behavioral_cloning: 
-      demo_path: Demos/4AIDriver1.demo
-      strength: 1.0
+    #behavioral_cloning: 
+      #demo_path: Demos/5AIDriver1.demo
+      #strength: 0.1
     hyperparameters: 
       batch_size: 256
       beta: 0.0005
@@ -13,7 +13,7 @@ behaviors:
       learning_rate: 3.0e-4
       learning_rate_schedule: linear
       num_epoch: 3
-    max_steps: 1000000000
+    max_steps: 500000000
     network_settings: 
       hidden_units: 128
       normalize: false
@@ -22,9 +22,9 @@ behaviors:
       extrinsic: 
         gamma: 0.99
         strength: 1.0
-      gail: 
-        demo_path: Demos/4AIDriver1.demo
-        strength: 1.0
+      #gail: 
+        #demo_path: Demos/5AIDriver1.demo
+        #strength: 0.5
     summary_freq: 100000
     time_horizon: 64
     trainer_type: ppo
