@@ -13,7 +13,7 @@ behaviors:
       learning_rate: 3.0e-4
       learning_rate_schedule: linear
       num_epoch: 3
-    max_steps: 500000000
+    max_steps: 1000000000
     network_settings: 
       hidden_units: 128
       normalize: false
