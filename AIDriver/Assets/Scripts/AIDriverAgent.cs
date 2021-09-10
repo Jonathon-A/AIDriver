@@ -47,7 +47,8 @@ public class AIDriverAgent : Agent
     public override void CollectObservations(VectorSensor sensor)
     {
         Vector3 WaypointForward = WaypointsList[NextIndex].transform.right;
-        float DirectionAngle = Vector3.Angle(transform.forward, WaypointForward);
+        float DirectionAngle = Vector3.SignedAngle(transform.forward, WaypointForward, Vector3.up);
+    //    Debug.Log(DirectionAngle);
         sensor.AddObservation(DirectionAngle);
 
         sensor.AddObservation(RB.velocity.magnitude);
