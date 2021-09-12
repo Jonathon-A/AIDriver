@@ -5188,13 +5188,14 @@ MonoBehaviour:
   m_SensorName: WaypointPerceptionSensor
   m_DetectableTags:
   - Waypoint
+  - Barrier
   m_RaysPerDirection: 1
   m_MaxRayDegrees: 30
   m_SphereCastRadius: 0.5
   m_RayLength: 50
   m_RayLayerMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 192
   m_ObservationStacks: 1
   rayHitColor: {r: 0.0068565607, g: 1, b: 0, a: 1}
   rayMissColor: {r: 1, g: 1, b: 1, a: 1}
