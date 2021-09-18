@@ -315,6 +315,10 @@ public class MSSceneControllerFree : MonoBehaviour
         horizontalInput = HInput;
     }
 
+    public void ResetWheels() {
+        vehicleCode.ResetWheels();
+    }
+
     void FixedUpdate()
     {
         if (!error)

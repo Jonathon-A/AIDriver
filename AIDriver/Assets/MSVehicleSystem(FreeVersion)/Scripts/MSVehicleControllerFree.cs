@@ -552,7 +552,7 @@ public class MSVehicleControllerFree : MonoBehaviour
         {
             SetCameras();
         }
-       
+
     }
     public MSSceneControllerFree ControlsScript;
     void DebugStartErrors()
@@ -646,17 +646,17 @@ public class MSVehicleControllerFree : MonoBehaviour
         }
         if (PlayerCar)
         {
- if (!isInsideTheCar)
-        {
-            EnableCameras(-1);
-            _vehicleSettings.startOn = false;
+            if (!isInsideTheCar)
+            {
+                EnableCameras(-1);
+                _vehicleSettings.startOn = false;
+            }
+            else
+            {
+                EnableCameras(indexCamera);
+            }
         }
-        else
-        {
-            EnableCameras(indexCamera);
-        }
-        }
-       
+
         wheelColliderList = new WheelCollider[(4)];
         wheelColliderList[0] = _wheels.rightFrontWheel.wheelCollider;
         wheelColliderList[1] = _wheels.leftFrontWheel.wheelCollider;
@@ -1234,7 +1234,7 @@ public class MSVehicleControllerFree : MonoBehaviour
         isInsideTheCar = false;
         EnableCameras(-1);
         handBrakeTrue = true;
-        
+
     }
 
     void FixedUpdate()
@@ -2096,6 +2096,22 @@ public class MSVehicleControllerFree : MonoBehaviour
 
     #region VolantManager
 
+    public void ResetWheels()
+    {
+        currentGear = 0;
+
+        angle1Ref = 0f;
+
+        _wheels.rightFrontWheel.wheelCollider.steerAngle = 0f;
+
+        _wheels.leftFrontWheel.wheelCollider.steerAngle = 0f;
+
+        _wheels.rightRearWheel.wheelCollider.steerAngle = 0f;
+
+        _wheels.leftRearWheel.wheelCollider.steerAngle = 0f;
+
+    }
+
     void Volant()
     {
         angle1Ref = Mathf.MoveTowards(angle1Ref, horizontalInput, 2 * Time.deltaTime);
@@ -2161,7 +2177,7 @@ public class MSVehicleControllerFree : MonoBehaviour
                 _wheels.leftRearWheel.wheelCollider.steerAngle = angleRefVolant;
             }
         }
-
+       
         if (_vehicleSettings.volant)
         {
             if (_vehicleSettings.volant)
@@ -2253,7 +2269,7 @@ public class MSVehicleControllerFree : MonoBehaviour
             adjustTorque = 1;
         }
 
-       
+
         return torqueM * adjustTorque * vehicleScale;
     }
 
