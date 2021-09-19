@@ -89,7 +89,7 @@ public class AIDriverAgent : Agent
 
       //  Debug.Log(Acceleration + " " + Turning);
 
-        AddReward(forwardSpeed * 0.0001f);
+        AddReward(forwardSpeed * 0.00001f);
 
     }
    // public float InputThrottle;
@@ -195,9 +195,9 @@ public class AIDriverAgent : Agent
 
                     LapNext = false;
 
-                    AddReward(100000f / StepCount);
+                    AddReward(100f * MaxStep/ StepCount);
 
-               //    Debug.Log("Final end " + GetCumulativeReward());
+                 //   Debug.Log("Final end " + GetCumulativeReward());
                     EndEpisode();
                 }
 
