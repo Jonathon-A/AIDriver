@@ -197,7 +197,7 @@ public class AIDriverAgent : Agent
 
                     AddReward(100f * MaxStep/ StepCount);
 
-                 //   Debug.Log("Final end " + GetCumulativeReward());
+               //    Debug.Log("Final end " + GetCumulativeReward());
                     EndEpisode();
                 }
 
