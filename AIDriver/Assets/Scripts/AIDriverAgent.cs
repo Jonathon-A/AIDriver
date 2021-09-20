@@ -20,6 +20,7 @@ public class AIDriverAgent : Agent
     {
 
         RB.velocity = Vector3.zero;
+        RB.angularVelocity = Vector3.zero;
         transform.rotation = Quaternion.Euler(StartRotation);
         // transform.position = new Vector3(StartPosition.x + Random.Range(-Mathf.Abs(StartPositionVariance.x), Mathf.Abs(StartPositionVariance.x)), 
         //      StartPosition.y,
@@ -89,7 +90,7 @@ public class AIDriverAgent : Agent
 
       //  Debug.Log(Acceleration + " " + Turning);
 
-        AddReward(forwardSpeed * 0.00001f);
+        AddReward(forwardSpeed * 0.0001f);
 
     }
    // public float InputThrottle;
@@ -277,7 +278,7 @@ public class AIDriverAgent : Agent
     {
         if (collision.gameObject.CompareTag("Barrier"))
         {
-            AddReward(-1f);
+            AddReward(-2f);
             StaySteps = 0;
 
         }
