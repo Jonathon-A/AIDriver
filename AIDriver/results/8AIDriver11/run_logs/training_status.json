@@ -2,58 +2,58 @@
     "AIDriver": {
         "checkpoints": [
             {
-                "steps": 338999942,
-                "file_path": "results\\8AIDriver11\\AIDriver\\AIDriver-338999942.onnx",
-                "reward": 301.76125349112164,
-                "creation_time": 1632579298.0610843,
+                "steps": 387499974,
+                "file_path": "results\\8AIDriver11\\AIDriver\\AIDriver-387499974.onnx",
+                "reward": 672.9887502118945,
+                "creation_time": 1632652901.4296687,
                 "auxillary_file_paths": [
-                    "results\\8AIDriver11\\AIDriver\\AIDriver-338999942.pt"
+                    "results\\8AIDriver11\\AIDriver\\AIDriver-387499974.pt"
                 ]
             },
             {
-                "steps": 339499972,
-                "file_path": "results\\8AIDriver11\\AIDriver\\AIDriver-339499972.onnx",
-                "reward": 211.16112065936127,
-                "creation_time": 1632579707.2942784,
+                "steps": 387999970,
+                "file_path": "results\\8AIDriver11\\AIDriver\\AIDriver-387999970.onnx",
+                "reward": 702.3724551093765,
+                "creation_time": 1632653339.6570325,
                 "auxillary_file_paths": [
-                    "results\\8AIDriver11\\AIDriver\\AIDriver-339499972.pt"
+                    "results\\8AIDriver11\\AIDriver\\AIDriver-387999970.pt"
                 ]
             },
             {
-                "steps": 339999987,
-                "file_path": "results\\8AIDriver11\\AIDriver\\AIDriver-339999987.onnx",
-                "reward": 161.61498503759503,
-                "creation_time": 1632580118.9774215,
+                "steps": 388499995,
+                "file_path": "results\\8AIDriver11\\AIDriver\\AIDriver-388499995.onnx",
+                "reward": 1037.1624657530338,
+                "creation_time": 1632653781.241664,
                 "auxillary_file_paths": [
-                    "results\\8AIDriver11\\AIDriver\\AIDriver-339999987.pt"
+                    "results\\8AIDriver11\\AIDriver\\AIDriver-388499995.pt"
                 ]
             },
             {
-                "steps": 340499999,
-                "file_path": "results\\8AIDriver11\\AIDriver\\AIDriver-340499999.onnx",
-                "reward": 236.79114646837115,
-                "creation_time": 1632580535.2846313,
-                "auxillary_file_paths": [
-                    "results\\8AIDriver11\\AIDriver\\AIDriver-340499999.pt"
-                ]
-            },
-            {
-                "steps": 340886569,
-                "file_path": "results\\8AIDriver11\\AIDriver\\AIDriver-340886569.onnx",
+                "steps": 388999938,
+                "file_path": "results\\8AIDriver11\\AIDriver\\AIDriver-388999938.onnx",
                 "reward": null,
-                "creation_time": 1632580877.2443469,
+                "creation_time": 1632654220.364675,
                 "auxillary_file_paths": [
-                    "results\\8AIDriver11\\AIDriver\\AIDriver-340886569.pt"
+                    "results\\8AIDriver11\\AIDriver\\AIDriver-388999938.pt"
+                ]
+            },
+            {
+                "steps": 389486282,
+                "file_path": "results\\8AIDriver11\\AIDriver\\AIDriver-389486282.onnx",
+                "reward": 854.9466244317204,
+                "creation_time": 1632654677.8792725,
+                "auxillary_file_paths": [
+                    "results\\8AIDriver11\\AIDriver\\AIDriver-389486282.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 340886569,
+            "steps": 389486282,
             "file_path": "results\\8AIDriver11\\AIDriver.onnx",
-            "reward": null,
-            "creation_time": 1632580877.2443469,
+            "reward": 854.9466244317204,
+            "creation_time": 1632654677.8792725,
             "auxillary_file_paths": [
-                "results\\8AIDriver11\\AIDriver\\AIDriver-340886569.pt"
+                "results\\8AIDriver11\\AIDriver\\AIDriver-389486282.pt"
             ]
         }
     },
