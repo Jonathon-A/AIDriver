@@ -2,58 +2,58 @@
     "AIDriver": {
         "checkpoints": [
             {
-                "steps": 74999987,
-                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-74999987.onnx",
-                "reward": 412.8023238303805,
-                "creation_time": 1632879113.5375667,
-                "auxillary_file_paths": [
-                    "results\\8AIDriver12\\AIDriver\\AIDriver-74999987.pt"
-                ]
-            },
-            {
-                "steps": 75499997,
-                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-75499997.onnx",
+                "steps": 130999957,
+                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-130999957.onnx",
                 "reward": null,
-                "creation_time": 1632879513.9470465,
+                "creation_time": 1632987730.1382394,
                 "auxillary_file_paths": [
-                    "results\\8AIDriver12\\AIDriver\\AIDriver-75499997.pt"
+                    "results\\8AIDriver12\\AIDriver\\AIDriver-130999957.pt"
                 ]
             },
             {
-                "steps": 75999954,
-                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-75999954.onnx",
-                "reward": 277.0782618932426,
-                "creation_time": 1632879921.441266,
+                "steps": 131499964,
+                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-131499964.onnx",
+                "reward": 662.5740609450149,
+                "creation_time": 1632988130.7900527,
                 "auxillary_file_paths": [
-                    "results\\8AIDriver12\\AIDriver\\AIDriver-75999954.pt"
+                    "results\\8AIDriver12\\AIDriver\\AIDriver-131499964.pt"
                 ]
             },
             {
-                "steps": 76499956,
-                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-76499956.onnx",
-                "reward": 632.1357549302036,
-                "creation_time": 1632880340.187561,
+                "steps": 131999959,
+                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-131999959.onnx",
+                "reward": 406.2497337181121,
+                "creation_time": 1632988531.5492814,
                 "auxillary_file_paths": [
-                    "results\\8AIDriver12\\AIDriver\\AIDriver-76499956.pt"
+                    "results\\8AIDriver12\\AIDriver\\AIDriver-131999959.pt"
                 ]
             },
             {
-                "steps": 76674574,
-                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-76674574.onnx",
-                "reward": 450.4795918776188,
-                "creation_time": 1632880508.5720398,
+                "steps": 132499989,
+                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-132499989.onnx",
+                "reward": 136.90900312643498,
+                "creation_time": 1632988938.262738,
                 "auxillary_file_paths": [
-                    "results\\8AIDriver12\\AIDriver\\AIDriver-76674574.pt"
+                    "results\\8AIDriver12\\AIDriver\\AIDriver-132499989.pt"
+                ]
+            },
+            {
+                "steps": 132523294,
+                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-132523294.onnx",
+                "reward": 606.8784824822731,
+                "creation_time": 1632988963.5489724,
+                "auxillary_file_paths": [
+                    "results\\8AIDriver12\\AIDriver\\AIDriver-132523294.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 76674574,
+            "steps": 132523294,
             "file_path": "results\\8AIDriver12\\AIDriver.onnx",
-            "reward": 450.4795918776188,
-            "creation_time": 1632880508.5720398,
+            "reward": 606.8784824822731,
+            "creation_time": 1632988963.5489724,
             "auxillary_file_paths": [
-                "results\\8AIDriver12\\AIDriver\\AIDriver-76674574.pt"
+                "results\\8AIDriver12\\AIDriver\\AIDriver-132523294.pt"
             ]
         }
     },
