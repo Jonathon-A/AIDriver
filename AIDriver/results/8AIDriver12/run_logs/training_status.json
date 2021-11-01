@@ -2,58 +2,58 @@
     "AIDriver": {
         "checkpoints": [
             {
-                "steps": 285999964,
-                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-285999964.onnx",
-                "reward": null,
-                "creation_time": 1633592923.9815855,
+                "steps": 309499951,
+                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-309499951.onnx",
+                "reward": 171.3966845050454,
+                "creation_time": 1634629460.2333915,
                 "auxillary_file_paths": [
-                    "results\\8AIDriver12\\AIDriver\\AIDriver-285999964.pt"
+                    "results\\8AIDriver12\\AIDriver\\AIDriver-309499951.pt"
                 ]
             },
             {
-                "steps": 286499989,
-                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-286499989.onnx",
-                "reward": 201.08191397460178,
-                "creation_time": 1633594493.1130064,
+                "steps": 309999982,
+                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-309999982.onnx",
+                "reward": 70.61512628104538,
+                "creation_time": 1634631137.0769112,
                 "auxillary_file_paths": [
-                    "results\\8AIDriver12\\AIDriver\\AIDriver-286499989.pt"
+                    "results\\8AIDriver12\\AIDriver\\AIDriver-309999982.pt"
                 ]
             },
             {
-                "steps": 286999997,
-                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-286999997.onnx",
-                "reward": 168.17581108037848,
-                "creation_time": 1633596061.8573234,
+                "steps": 310499975,
+                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-310499975.onnx",
+                "reward": 394.91475211828947,
+                "creation_time": 1634632816.8311045,
                 "auxillary_file_paths": [
-                    "results\\8AIDriver12\\AIDriver\\AIDriver-286999997.pt"
+                    "results\\8AIDriver12\\AIDriver\\AIDriver-310499975.pt"
                 ]
             },
             {
-                "steps": 287499969,
-                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-287499969.onnx",
-                "reward": 287.4265385325998,
-                "creation_time": 1633597628.6264036,
+                "steps": 310999976,
+                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-310999976.onnx",
+                "reward": 313.8687793734716,
+                "creation_time": 1634634500.4939516,
                 "auxillary_file_paths": [
-                    "results\\8AIDriver12\\AIDriver\\AIDriver-287499969.pt"
+                    "results\\8AIDriver12\\AIDriver\\AIDriver-310999976.pt"
                 ]
             },
             {
-                "steps": 287839645,
-                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-287839645.onnx",
-                "reward": null,
-                "creation_time": 1633598589.3875012,
+                "steps": 311116435,
+                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-311116435.onnx",
+                "reward": 297.0044886835385,
+                "creation_time": 1634634909.7995062,
                 "auxillary_file_paths": [
-                    "results\\8AIDriver12\\AIDriver\\AIDriver-287839645.pt"
+                    "results\\8AIDriver12\\AIDriver\\AIDriver-311116435.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 287839645,
+            "steps": 311116435,
             "file_path": "results\\8AIDriver12\\AIDriver.onnx",
-            "reward": null,
-            "creation_time": 1633598589.3875012,
+            "reward": 297.0044886835385,
+            "creation_time": 1634634909.7995062,
             "auxillary_file_paths": [
-                "results\\8AIDriver12\\AIDriver\\AIDriver-287839645.pt"
+                "results\\8AIDriver12\\AIDriver\\AIDriver-311116435.pt"
             ]
         }
     },
