@@ -2,58 +2,58 @@
     "AIDriver": {
         "checkpoints": [
             {
-                "steps": 318499969,
-                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-318499969.onnx",
-                "reward": 118.02503784000874,
-                "creation_time": 1636529085.8203359,
+                "steps": 355999987,
+                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-355999987.onnx",
+                "reward": null,
+                "creation_time": 1637230635.0981998,
                 "auxillary_file_paths": [
-                    "results\\8AIDriver12\\AIDriver\\AIDriver-318499969.pt"
+                    "results\\8AIDriver12\\AIDriver\\AIDriver-355999987.pt"
                 ]
             },
             {
-                "steps": 318999948,
-                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-318999948.onnx",
-                "reward": 353.45873587516445,
-                "creation_time": 1636530777.1129518,
+                "steps": 356499966,
+                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-356499966.onnx",
+                "reward": 110.99658021330833,
+                "creation_time": 1637231049.4152877,
                 "auxillary_file_paths": [
-                    "results\\8AIDriver12\\AIDriver\\AIDriver-318999948.pt"
+                    "results\\8AIDriver12\\AIDriver\\AIDriver-356499966.pt"
                 ]
             },
             {
-                "steps": 319499940,
-                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-319499940.onnx",
-                "reward": 523.4705861071125,
-                "creation_time": 1636532477.88445,
+                "steps": 356999994,
+                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-356999994.onnx",
+                "reward": 268.4349237583898,
+                "creation_time": 1637231467.5582514,
                 "auxillary_file_paths": [
-                    "results\\8AIDriver12\\AIDriver\\AIDriver-319499940.pt"
+                    "results\\8AIDriver12\\AIDriver\\AIDriver-356999994.pt"
                 ]
             },
             {
-                "steps": 319999970,
-                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-319999970.onnx",
-                "reward": 386.9564520351407,
-                "creation_time": 1636534709.3858826,
+                "steps": 357499969,
+                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-357499969.onnx",
+                "reward": null,
+                "creation_time": 1637231908.8519273,
                 "auxillary_file_paths": [
-                    "results\\8AIDriver12\\AIDriver\\AIDriver-319999970.pt"
+                    "results\\8AIDriver12\\AIDriver\\AIDriver-357499969.pt"
                 ]
             },
             {
-                "steps": 320007624,
-                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-320007624.onnx",
-                "reward": 366.8559919060208,
-                "creation_time": 1636534718.6515698,
+                "steps": 357502028,
+                "file_path": "results\\8AIDriver12\\AIDriver\\AIDriver-357502028.onnx",
+                "reward": 283.42665854562074,
+                "creation_time": 1637231910.848913,
                 "auxillary_file_paths": [
-                    "results\\8AIDriver12\\AIDriver\\AIDriver-320007624.pt"
+                    "results\\8AIDriver12\\AIDriver\\AIDriver-357502028.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 320007624,
+            "steps": 357502028,
             "file_path": "results\\8AIDriver12\\AIDriver.onnx",
-            "reward": 366.8559919060208,
-            "creation_time": 1636534718.6515698,
+            "reward": 283.42665854562074,
+            "creation_time": 1637231910.848913,
             "auxillary_file_paths": [
-                "results\\8AIDriver12\\AIDriver\\AIDriver-320007624.pt"
+                "results\\8AIDriver12\\AIDriver\\AIDriver-357502028.pt"
             ]
         }
     },
