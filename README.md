@@ -9,12 +9,18 @@ The setup:
 
 At the start of the episode:
 
--Spawn at start position with some randomness and facing forwards
+-Spawn at start position with some randomness and facing forwards with zero velocity and in gear 0
 
 
 Observations:
 
--12 spherecasts equally spaced around the vehicle
+-12 spherecasts equally spaced around the vehicle that detect barriers
+
+-3 spherecasts equally spaced infront of the vehicle that detect waypoints
+
+-Signed angle between car and waypoint foward vectors
+
+-Velocity of car
 
 
 Actions:
@@ -28,7 +34,7 @@ Rewards:
 
 -Very small reward for forward velocity
 
--Large reward for crossing xorrect waypoint
+-Large reward for crossing correct waypoint
 
 -Very Large reward for finishing lap (larger reward for faster completion)
 
