@@ -49,7 +49,5 @@ Some images of the project:
 
 ![alt text](https://github.com/Jonathon-A/AIDriver/blob/main/Images/CarTraining.png)
 
-![alt text](https://github.com/Jonathon-A/AIDriver/blob/main/Videos/RaceVideo.mp4)
-
 https://user-images.githubusercontent.com/61558176/142739632-59fd4f77-1170-4887-b1fe-b6d3e0505da4.mp4
 
