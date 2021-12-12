@@ -16,8 +16,13 @@ public class GameController : MonoBehaviour
     }
 
     public bool Render;
+    public bool RenderWaypoints;
+    public bool RenderBarriers;
     private bool Change = true;
-
+    private bool Change2 = true;
+    private bool Change3 = true;
+    public Transform WaypointTransform;
+    public Transform BarrierTransform;
     private void Update()
     {
         if (Render != Change)
@@ -66,8 +71,52 @@ public class GameController : MonoBehaviour
                 }
             }
         }
-      
-       
+
+        if (RenderWaypoints != Change2)
+        {
+            Change2 = RenderWaypoints;
+            if (RenderWaypoints)
+            {
+                foreach (Transform Waypoint in WaypointTransform)
+                {
+
+                    Waypoint.GetComponent<Renderer>().enabled = true;
+                }
+            }
+            else
+            {
+                foreach (Transform Waypoint in WaypointTransform)
+                {
+
+                    Waypoint.GetComponent<Renderer>().enabled = false;
+                }
+            }
+ 
+        }
+
+        if (RenderBarriers != Change3)
+        {
+            Change3 = RenderBarriers;
+            if (RenderBarriers)
+            {
+                foreach (Transform Barrier in BarrierTransform)
+                {
+
+                    Barrier.GetComponent<Renderer>().enabled = true;
+                }
+            }
+            else
+            {
+                foreach (Transform Barrier in BarrierTransform)
+                {
+
+                    Barrier.GetComponent<Renderer>().enabled = false;
+                }
+            }
+
+        }
+
+
     }
 
 }
