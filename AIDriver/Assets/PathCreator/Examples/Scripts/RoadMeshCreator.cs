@@ -196,6 +196,7 @@ namespace PathCreation.Examples
                 int num = 0;
 
                 int WaypointStep = path.NumPoints / ApproxWaypointNumber;
+                
                 // print(path.NumPoints);
                 // print(WaypointStep);
                 for (int i = WaypointStep; i < path.NumPoints; i += WaypointStep)

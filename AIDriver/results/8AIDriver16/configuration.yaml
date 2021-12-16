@@ -29,7 +29,7 @@ behaviors:
           vis_encode_type: simple
           memory: null
           goal_conditioning_type: hyper
-    init_path: results\8AIDriver15\AIDriver
+    init_path: null
     keep_checkpoints: 5
     checkpoint_interval: 500000
     max_steps: 1000000000
@@ -55,9 +55,9 @@ engine_settings:
 environment_parameters: null
 checkpoint_settings:
   run_id: 8AIDriver16
-  initialize_from: 8AIDriver15
+  initialize_from: null
   load_model: false
-  resume: false
+  resume: true
   force: false
   train_model: false
   inference: false
