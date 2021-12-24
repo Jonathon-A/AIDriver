@@ -20,13 +20,14 @@ public class AIDriverAgent : Agent
     {
 
         RB.velocity = Vector3.zero;
+
         RB.angularVelocity = Vector3.zero;
         transform.rotation = Quaternion.Euler(StartRotation);
         // transform.position = new Vector3(StartPosition.x + Random.Range(-Mathf.Abs(StartPositionVariance.x), Mathf.Abs(StartPositionVariance.x)), 
         //      StartPosition.y,
         //     StartPosition.z + Random.Range(-Mathf.Abs(StartPositionVariance.y), Mathf.Abs(StartPositionVariance.y)));
         ControlsScript.ResetWheels();
-
+       
         transform.position = new Vector3(StartPosition.x + (Random.Range(-2, 4) * 10),
             StartPosition.y,
             StartPosition.z + (Random.Range(-1, 2) * 5));
