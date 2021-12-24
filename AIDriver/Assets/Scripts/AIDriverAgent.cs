@@ -45,6 +45,7 @@ public class AIDriverAgent : Agent
         NextIndex = 0;
         StaySteps = 0;
 
+        StillCount = 0;
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -91,7 +92,7 @@ public class AIDriverAgent : Agent
 
       //  Debug.Log(Acceleration + " " + Turning);
 
-        AddReward(forwardSpeed * 0.0001f);
+        AddReward(forwardSpeed * 0.001f);
 
     }
    // public float InputThrottle;
@@ -150,6 +151,8 @@ public class AIDriverAgent : Agent
         }
     }
 
+    Vector3 LastPosition = Vector3.zero;
+    int StillCount = 0;
     void FixedUpdate()
     {
         if (GameController.ColAllowed)
@@ -179,7 +182,21 @@ public class AIDriverAgent : Agent
                 NewSpawn = true;
             }
         }
-       
+
+        if (transform.position == LastPosition)
+        {
+            StillCount++;
+            if (StillCount >= 250) {
+                AddReward(-5);
+                EndEpisode();
+            }
+        }
+        else {
+            LastPosition = transform.position;
+            StillCount = 0;
+        }
+        
+
     }
 
     private int NextIndex = 0;
