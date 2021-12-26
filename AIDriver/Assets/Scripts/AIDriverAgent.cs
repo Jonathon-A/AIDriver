@@ -28,9 +28,9 @@ public class AIDriverAgent : Agent
         //     StartPosition.z + Random.Range(-Mathf.Abs(StartPositionVariance.y), Mathf.Abs(StartPositionVariance.y)));
         ControlsScript.ResetWheels();
        
-        transform.position = new Vector3(StartPosition.x + (Random.Range(-2, 4) * 10),
+        transform.position = new Vector3(StartPosition.x + (Random.Range(-2, 4) * StartPositionVariance.x),
             StartPosition.y,
-            StartPosition.z + (Random.Range(-1, 2) * 5));
+            StartPosition.z + (Random.Range(-1, 2) * StartPositionVariance.y));
 
         
         // transform.position = new Vector3(StartPosition.x,
@@ -92,7 +92,7 @@ public class AIDriverAgent : Agent
 
       //  Debug.Log(Acceleration + " " + Turning);
 
-        AddReward(forwardSpeed * 0.001f);
+        AddReward(forwardSpeed * 0.0005f);
 
     }
    // public float InputThrottle;
