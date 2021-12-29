@@ -1,0 +1,56 @@
+{
+    "AIDriver": {
+        "checkpoints": [
+            {
+                "steps": 499949,
+                "file_path": "results\\8AIDriver32\\AIDriver\\AIDriver-499949.onnx",
+                "reward": null,
+                "creation_time": 1640604364.7698083,
+                "auxillary_file_paths": [
+                    "results\\8AIDriver32\\AIDriver\\AIDriver-499949.pt"
+                ]
+            },
+            {
+                "steps": 999953,
+                "file_path": "results\\8AIDriver32\\AIDriver\\AIDriver-999953.onnx",
+                "reward": 1190.504129037261,
+                "creation_time": 1640605010.6730695,
+                "auxillary_file_paths": [
+                    "results\\8AIDriver32\\AIDriver\\AIDriver-999953.pt"
+                ]
+            },
+            {
+                "steps": 1499945,
+                "file_path": "results\\8AIDriver32\\AIDriver\\AIDriver-1499945.onnx",
+                "reward": 1167.1799791753292,
+                "creation_time": 1640605665.8401194,
+                "auxillary_file_paths": [
+                    "results\\8AIDriver32\\AIDriver\\AIDriver-1499945.pt"
+                ]
+            },
+            {
+                "steps": 1786001,
+                "file_path": "results\\8AIDriver32\\AIDriver\\AIDriver-1786001.onnx",
+                "reward": null,
+                "creation_time": 1640606043.8050034,
+                "auxillary_file_paths": [
+                    "results\\8AIDriver32\\AIDriver\\AIDriver-1786001.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1786001,
+            "file_path": "results\\8AIDriver32\\AIDriver.onnx",
+            "reward": null,
+            "creation_time": 1640606043.8050034,
+            "auxillary_file_paths": [
+                "results\\8AIDriver32\\AIDriver\\AIDriver-1786001.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}
