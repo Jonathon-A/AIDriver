@@ -331,7 +331,7 @@ public class AIDriverAgent : Agent
     {
         if (collision.gameObject.CompareTag("Barrier"))
         {
-            AddReward(-0.001f);
+            AddReward(-0.01f);
             StaySteps++;
             if (StaySteps >= 250)
             {
