@@ -1,0 +1,65 @@
+{
+    "AIDriver": {
+        "checkpoints": [
+            {
+                "steps": 20499984,
+                "file_path": "results\\8AIDriver35\\AIDriver\\AIDriver-20499984.onnx",
+                "reward": -69.06958930939436,
+                "creation_time": 1641037792.4354553,
+                "auxillary_file_paths": [
+                    "results\\8AIDriver35\\AIDriver\\AIDriver-20499984.pt"
+                ]
+            },
+            {
+                "steps": 20999946,
+                "file_path": "results\\8AIDriver35\\AIDriver\\AIDriver-20999946.onnx",
+                "reward": null,
+                "creation_time": 1641038492.6206143,
+                "auxillary_file_paths": [
+                    "results\\8AIDriver35\\AIDriver\\AIDriver-20999946.pt"
+                ]
+            },
+            {
+                "steps": 21499956,
+                "file_path": "results\\8AIDriver35\\AIDriver\\AIDriver-21499956.onnx",
+                "reward": 1183.6165626645088,
+                "creation_time": 1641039197.644638,
+                "auxillary_file_paths": [
+                    "results\\8AIDriver35\\AIDriver\\AIDriver-21499956.pt"
+                ]
+            },
+            {
+                "steps": 21999951,
+                "file_path": "results\\8AIDriver35\\AIDriver\\AIDriver-21999951.onnx",
+                "reward": 1194.6063154935837,
+                "creation_time": 1641039900.3257432,
+                "auxillary_file_paths": [
+                    "results\\8AIDriver35\\AIDriver\\AIDriver-21999951.pt"
+                ]
+            },
+            {
+                "steps": 22186298,
+                "file_path": "results\\8AIDriver35\\AIDriver\\AIDriver-22186298.onnx",
+                "reward": 721.4132171527793,
+                "creation_time": 1641040166.5670524,
+                "auxillary_file_paths": [
+                    "results\\8AIDriver35\\AIDriver\\AIDriver-22186298.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 22186298,
+            "file_path": "results\\8AIDriver35\\AIDriver.onnx",
+            "reward": 721.4132171527793,
+            "creation_time": 1641040166.5670524,
+            "auxillary_file_paths": [
+                "results\\8AIDriver35\\AIDriver\\AIDriver-22186298.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}

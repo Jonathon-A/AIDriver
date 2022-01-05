@@ -55,7 +55,9 @@ public class AIDriverAgent : Agent
     //    Debug.Log(DirectionAngle);
         sensor.AddObservation(DirectionAngle);
 
-        sensor.AddObservation(RB.velocity.magnitude);
+        Vector3 localVelocity = transform.InverseTransformDirection(RB.velocity);
+        float forwardSpeed = localVelocity.z;
+        sensor.AddObservation(forwardSpeed);
        // Debug.Log(DirectionAngle);
     }
 
@@ -195,7 +197,8 @@ public class AIDriverAgent : Agent
             LastPosition = transform.position;
             StillCount = 0;
         }
-        
+
+        //Debug.Log(GetCumulativeReward());
 
     }
 
